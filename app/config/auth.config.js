@@ -1,4 +1,4 @@
 // app/config/auth.config.js
 export default {
-    secret: "your-secret-key",
-  };
+  secret: process.env.JWT_SECRET || "your-secret-key",
+};
