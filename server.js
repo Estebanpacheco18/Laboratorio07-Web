@@ -8,8 +8,9 @@ import userRoutes from "./app/routes/user.routes.js";
 
 const app = express();
 
+// Permite el acceso a la API desde el cliente React
 const corsOptions = {
-  origin: "http://localhost:8080",
+  origin: "http://localhost:3001",
 };
 
 app.use(cors(corsOptions));

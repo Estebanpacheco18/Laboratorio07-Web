@@ -1,0 +1,79 @@
+/* Paleta de colores para el proyecto */
+:root {
+  --green-dark: #2E7D32;
+  --green-light: #81C784;
+  --white: #FFFFFF;
+  --gray-light: #F5F5F5;
+  --black-soft: #333333;
+}
+
+/* Estilos globales para todas las paginas*/
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: var(--gray-light);
+  color: var(--black-soft);
+}
+
+h1, h2, h3 {
+  color: var(--green-dark);
+}
+
+a {
+  text-decoration: none;
+  color: var(--green-dark);
+}
+
+a:hover {
+  color: var(--green-light);
+}
+
+button {
+  background-color: var(--green-dark);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: var(--green-light);
+}
+
+input {
+  padding: 10px;
+  border: 1px solid var(--green-dark);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--green-light);
+}
+
+nav {
+  background-color: var(--green-dark);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: var(--white);
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+nav a:last-child {
+  margin-right: 0;
+}
+
+nav a:hover {
+  color: var(--green-light);
+}
