@@ -31,7 +31,7 @@ export const signup = async (req, res) => {
         res.send({ message: "User registered successfully!" });
       }
     } else {
-      await user.setRoles([1]); // user role = 1
+      await user.setRoles([userRole.id]); // user role = 1
       res.send({ message: "User registered successfully!" });
     }
   } catch (error) {
